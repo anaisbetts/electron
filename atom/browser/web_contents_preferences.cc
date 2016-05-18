@@ -165,7 +165,7 @@ void WebContentsPreferences::AppendExtraCommandLineSwitches(
 
 #if defined(OS_WIN)
   // Enable screen reader
-  bool screen_reader
+  bool screen_reader;
   if (web_preferences.GetBoolean(
         options::kEnableScreenReader,
         &screen_reader) && screen_reader) {

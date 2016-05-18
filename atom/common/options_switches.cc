@@ -150,6 +150,7 @@ const char kNodeIntegration[] = "node-integration";
 const char kGuestInstanceID[] = "guest-instance-id";
 const char kOpenerID[]        = "opener-id";
 const char kScrollBounce[]    = "scroll-bounce";
+const char kEnableScreenReader[]    = "enable-screen-reader";
 
 // Widevine options
 // Path to Widevine CDM binaries.
