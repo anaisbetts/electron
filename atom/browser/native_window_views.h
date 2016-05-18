@@ -202,6 +202,9 @@ class NativeWindowViews : public NativeWindow,
 
   // If true we have enabled a11y
   bool enabled_a11y_support_;
+  
+  // If true the web preferences flag was given to us to enable a11y
+  bool should_enable_a11y_support_;
 
 #endif
 

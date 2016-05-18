@@ -130,6 +130,7 @@ NativeWindowViews::NativeWindowViews(
   options.Get(options::kResizable, &resizable_);
   options.Get(options::kMinimizable, &minimizable_);
   options.Get(options::kMaximizable, &maximizable_);
+  options.Get(options::kEnableScreenReader, &should_enable_a11y_support_);
 #endif
 
   if (enable_larger_than_screen())
