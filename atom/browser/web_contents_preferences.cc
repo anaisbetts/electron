@@ -162,6 +162,16 @@ void WebContentsPreferences::AppendExtraCommandLineSwitches(
     if (!visible)  // Default state is visible.
       command_line->AppendSwitch("hidden-page");
   }
+
+#if defined(OS_WIN)
+  // Enable screen reader
+  bool screen_reader
+  if (web_preferences.GetBoolean(
+        options::kEnableScreenReader,
+        &screen_reader) && screen_reader) {
+    command_line->AppendSwitch(switches::kEnableScreenReader);
+  }
+#endif
 }
 
 // static
