@@ -109,6 +109,9 @@ const char kScrollBounce[] = "scrollBounce";
 // Enable blink features.
 const char kBlinkFeatures[] = "blinkFeatures";
 
+// Enable Screen Reader on Win32
+const char kEnableScreenReader[] = "enableScreenReader";
+
 }  // namespace options
 
 namespace switches {
